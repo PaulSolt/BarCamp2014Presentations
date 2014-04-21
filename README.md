@@ -17,6 +17,7 @@ I wanted to share my experiences raising money on Kickstarter. You need to plan 
 
 ![How to raise $47,000 on Kickstarter](https://raw.githubusercontent.com/PaulSolt/BarCamp2014Presentations/master/Kickstarter%20Slide.png)
 
+[$47,000 on Kickstarter Slides](https://github.com/PaulSolt/BarCamp2014Presentations/raw/master/%2447000%20on%20Kickstarter/BarCampRoc%20April%202014%20Slides.pdf)
 
 **iPhone 101**
 
