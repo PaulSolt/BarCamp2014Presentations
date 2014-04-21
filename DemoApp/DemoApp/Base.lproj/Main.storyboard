@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JUa-WW-Fqn" customClass="SliderView">
+                                <rect key="frame" x="0.0" y="244" width="160" height="80"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="gqS-iq-myT"/>
+                                    <constraint firstAttribute="width" constant="160" id="sYQ-fa-onS"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="fahrenheitValueChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Zid-11-rRJ"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kqb-qB-VWn" customClass="SliderView">
+                                <rect key="frame" x="160" y="244" width="160" height="80"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="r5i-1B-t4M"/>
+                                    <constraint firstAttribute="height" constant="80" id="vGR-KV-q2w"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="celciusValueChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="jKz-VF-xLE"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JUa-WW-Fqn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="7Cg-l8-sjZ"/>
+                            <constraint firstAttribute="centerY" secondItem="Kqb-qB-VWn" secondAttribute="centerY" id="AAo-hR-cGY"/>
+                            <constraint firstItem="Kqb-qB-VWn" firstAttribute="centerY" secondItem="JUa-WW-Fqn" secondAttribute="centerY" id="KVe-3c-pDJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Kqb-qB-VWn" secondAttribute="trailing" id="aqZ-ZD-8Id"/>
+                            <constraint firstItem="Kqb-qB-VWn" firstAttribute="leading" secondItem="JUa-WW-Fqn" secondAttribute="trailing" id="d10-d4-amp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="celciusSlider" destination="Kqb-qB-VWn" id="0KR-BM-DQj"/>
+                        <outlet property="fahrenheitSlider" destination="JUa-WW-Fqn" id="O0g-Ko-XZY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="106" y="79"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
